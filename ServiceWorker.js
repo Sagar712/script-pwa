@@ -1,8 +1,7 @@
 self.addEventListener("install", e => {
     e.waitUntil(
         caches.open("Script Text").then(cache => {
-            return cache.addAll(["./index.html", "./Mask.png", "./manifest.json",
-            "./static/css/", "./static/js/" 
+            return cache.addAll(["./index.html", "./Mask.png", "./manifest.json"
         ]);
         })
     );
